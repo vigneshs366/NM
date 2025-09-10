@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vignesh S's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom animations */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 0.8s ease forwards;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans selection:bg-indigo-500 selection:text-white">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 bg-gray-900 bg-opacity-90 backdrop-blur-md z-50 border-b border-gray-700">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#home" class="text-2xl font-semibold text-indigo-400 hover:text-indigo-500 transition">Vignesh S</a>
+      <ul class="hidden md:flex space-x-8 text-gray-300 font-medium">
+        <li><a href="#home" class="hover:text-indigo-400 transition">Home</a></li>
+        <li><a href="#core-interests" class="hover:text-indigo-400 transition">Core Interests</a></li>
+        <li><a href="#projects" class="hover:text-indigo-400 transition">Project Ideas</a></li>
+        <li><a href="#skills" class="hover:text-indigo-400 transition">Technical Skills</a></li>
+        <li><a href="#traits" class="hover:text-indigo-400 transition">Personal Traits</a></li>
+        <li><a href="#other-info" class="hover:text-indigo-400 transition">Other Info</a></li>
+      </ul>
+      <button id="nav-toggle" aria-label="Toggle menu" class="md:hidden text-indigo-400 focus:outline-none">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden bg-gray-800 border-t border-gray-700 hidden">
+      <ul class="flex flex-col space-y-2 px-6 py-4 text-gray-300 font-medium">
+        <li><a href="#home" class="block hover:text-indigo-400 transition">Home</a></li>
+        <li><a href="#core-interests" class="block hover:text-indigo-400 transition">Core Interests</a></li>
+        <li><a href="#projects" class="block hover:text-indigo-400 transition">Project Ideas</a></li>
+        <li><a href="#skills" class="block hover:text-indigo-400 transition">Technical Skills</a></li>
+        <li><a href="#traits" class="block hover:text-indigo-400 transition">Personal Traits</a></li>
+        <li><a href="#other-info" class="block hover:text-indigo-400 transition">Other Info</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="max-w-5xl mx-auto px-6 py-12 space-y-20">
+
+    <!-- Home / Introduction -->
+    <section id="home" tabindex="-1" class="opacity-0 translate-y-5 animate-fadeInUp">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-indigo-400 mb-6">Hi, I'm Vignesh S</h1>
+      <p class="text-lg md:text-xl leading-relaxed max-w-3xl">
+        Vignesh is a debugging specialist in C, C++, and Java. He is passionate about analyzing complex problems,
+        optimizing code, and ensuring high-quality software performance.
+        With a disciplined mindset and a continuous drive for improvement, Vignesh focuses on building structured knowledge,
+        developing technical ideas, and applying them to real-world scenarios.
+      </p>
+    </section>
+
+    <!-- Core Interests / Domains -->
+    <section id="core-interests" tabindex="-1" class="opacity-0 translate-y-5 animate-fadeInUp">
+      <h2 class="text-3xl font-semibold text-indigo-400 mb-6">Core Interests & Domains</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg max-w-3xl">
+        <li>Digital Forensics</li>
+        <li>Software Development (Java, Python, C/C++)</li>
+        <li>Data Structures &amp; Algorithms</li>
+        <li>Hardware &amp; IoT (ESP32-CAM, embedded systems)</li>
+        <li>Public Speaking (Tamil &amp; English)</li>
+        <li>Reading &amp; Continuous Learning</li>
+      </ul>
+    </section>
+
+    <!-- Project Ideas -->
+    <section id="projects" tabindex="-1" class="opacity-0 translate-y-5 animate-fadeInUp">
+      <h2 class="text-3xl font-semibold text-indigo-400 mb-6">Project Ideas</h2>
+      <div class="space-y-6 max-w-3xl text-lg">
+        <article>
+          <h3 class="font-semibold text-indigo-300 mb-1">Student Job Platform</h3>
+          <p>Connecting students with part-time job opportunities.</p>
+        </article>
+        <article>
+          <h3 class="font-semibold text-indigo-300 mb-1">Anti-cheating System</h3>
+          <p>Using ESP32-CAM &amp; Python for facial expression monitoring during exams.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills" tabindex="-1" class="opacity-0 translate-y-5 animate-fadeInUp">
+      <h2 class="text-3xl font-semibold text-indigo-400 mb-6">Technical Skills</h2>
+      <div class="max-w-3xl space-y-4 text-lg">
+        <div>
+          <h3 class="font-semibold text-indigo-300">Programming Languages:</h3>
+          <p>Java, Python, C/C++</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-indigo-300">Development Areas:</h3>
+          <p> Interfaces, Data Handling</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-indigo-300">Cybersecurity Focus:</h3>
+          <p>Threat analysis, forensics fundamentals</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-indigo-300">Hardware:</h3>
+          <p>ESP32, IoT-based implementations</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-indigo-300">Debugging Skills:</h3>
+          <p>Debugging skill, thread analysis</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personal Traits -->
+    <section id="traits" tabindex="-1" class="opacity-0 translate-y-5 animate-fadeInUp">
+      <h2 class="text-3xl font-semibold text-indigo-400 mb-6">Personal Traits</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg max-w-3xl">
+        <li>Curious &amp; adaptive learner</li>
+        <li>Focused on self-improvement &amp; discipline</li>
+        <li>Comfortable working both in teams and independently</li>
+        <li>Prefers structured, step-by-step learning approaches</li>
+      </ul>
+    </section>
+
+    <!-- Other Info -->
+    <section id="other-info" tabindex="-1" class="opacity-0 translate-y-5 animate-fadeInUp">
+      <h2 class="text-3xl font-semibold text-indigo-400 mb-6">Other Info</h2>
+      <ul class="list-disc list-inside space-y-2 text-lg max-w-3xl">
+        <li><strong>Location:</strong> India</li>
+        <li><strong>Communication Style:</strong> Professional, clear, and organized</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 border-t border-gray-700 mt-20">
+    <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+      <p>© 2025 Vignesh S. All rights reserved.</p>
+      <div class="flex space-x-6 mt-4 md:mt-0">
+        <!-- Social media placeholders -->
